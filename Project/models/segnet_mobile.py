@@ -3,11 +3,12 @@ from keras.models import *
 from keras.layers import *
 import keras.backend as K
 from keras.optimizers import Adam
-from keras.callbacks import TensorBoard, ModelCheckpoint, ReduceLROnPlateau, EarlyStopping
-from PIL import Image
+from keras.callbacks import ModelCheckpoint, ReduceLROnPlateau, EarlyStopping
 import numpy as np
 import os
 from keras.applications.mobilenet import MobileNet
+
+from get_train_datasets import generate_arrays_from_file
 
 #全局变量
 IMAGE_ORDERING = 'channels_last'
@@ -15,47 +16,6 @@ NCLASSES = 2
 HEIGHT = 1024
 WIDTH = 1024
 
-#1.导入并处理数据
-def generate_arrays_from_file(lines,batch_size):
-    # 获取总长度
-    n = len(lines)
-    i = 0
-    while 1:
-        X_train = []
-        Y_train = []
-        # 获取一个batch_size大小的数据
-        for _ in range(batch_size):
-            if i==0:
-                np.random.shuffle(lines)
-            name = lines[i]
-            # 从文件中读取图像
-            img = Image.open(r"data-cert/train" + '/' + name)
-            img = img.resize((WIDTH,HEIGHT))
-            img = np.array(img)
-            img = img/255
-            X_train.append(img)
-
-            name = lines[i].split('.')[0] + '.png'
-            # 从文件中读取图像
-            img = Image.open(r"data-cert/train_mask" + '/' + name)
-            img = img.resize((int(WIDTH/2),int(HEIGHT/2)))  #标签对应的图像变为原来的一半
-            img = np.array(img)
-            seg_labels = np.zeros((int(HEIGHT/2),int(WIDTH/2),NCLASSES))
-            for c in range(NCLASSES):
-                if c == 0:
-                    seg_labels[: , : , c ] = (img == c ).astype(int)
-                else:
-                    seg_labels[: , : , c ] = (img == 255 ).astype(int) * 255
-            seg_labels = np.reshape(seg_labels, (-1,NCLASSES))  #弄成一行
-            Y_train.append(seg_labels)
-
-            # 读完一个周期后重新开始
-            i = (i+1) % n
-        yield (np.array(X_train),np.array(Y_train))
-
-
-def relu6(x):
-    return K.relu(x, max_value=6)
 
 #-------------解码层---------------
 #参数含义：取编码后的第几层，是图像，分类数
