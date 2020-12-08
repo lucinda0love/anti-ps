@@ -42,7 +42,7 @@ def generate_arrays_from_file(lines,batch_size):
                 if c == 0:
                     seg_labels[: , : , c ] = (img == c ).astype(int)
                 else:
-                    seg_labels[: , : , c ] = (img == 255 ).astype(int) * 255
+                    seg_labels[: , : , c ] = (img == 255 ).astype(int)
             seg_labels = np.reshape(seg_labels, (-1,NCLASSES))
             Y_train.append(seg_labels)
 
