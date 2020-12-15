@@ -1,0 +1,110 @@
+<view class="header">
+  <view class='container hdCon'>
+    <navigator open-type='switchTab'>
+      <image mode='widthFix' src='/images/logo.png' class='logo' ></image>
+    </navigator>
+    <view class='kefu'>
+      <button class='btn' open-type='contact'></button>
+      <image class='kefu' mode='widthFix' src='/images/xiaoxi.png '></image>
+    </view>
+  </view>
+</view>
+
+<view class='banner'>
+  <swiper indicator-dots  indicator-color="rgba(255,255,255,0.5)" indicator-active-color="#fff" circular autoplay interval="4000">
+    <swiper-item><image src='/images/banner1.jpg'/>    </swiper-item>
+    <swiper-item><image src='/images/banner2.jpg'/></swiper-item>
+    <swiper-item><image src='/images/banner3.jpg'/></swiper-item>
+   </swiper>
+
+</view>
+<scroll-view class="major" scroll-x>
+    <navigator class='box'>
+      <image class="pic" src='/images/kecheng2.png'></image>
+      <view class="txt">项目背景</view>
+    </navigator>
+    <navigator  class='box' url=''>
+      <image class="pic" src='/images/kecheng3.png'></image>
+      <view class="txt">建议智源</view>
+    </navigator>
+    <navigator class='box' url=''>
+      <image class="pic" src='/images/kecheng4.png'></image>
+      <view class="txt">论文支持</view>
+    </navigator>
+    <navigator class='box' url=''>
+      <image class="pic" src='/images/kecheng5.png'></image>
+      <view class="txt">产业链</view>
+    </navigator>
+
+  </scroll-view>
+  <view class='works'>
+    <view class='container'>
+    <view class='pubTitle'>
+      <view class='txt'>功能优选</view>
+      <navigator class='more'>更多></navigator>
+    </view>
+    <view class='wkMain'>
+
+    <navigator class='box' url="/pages/second/second?data1={{data1}}">
+         <image class='pic' src='/images/psmajor02.jpg2.jpg'></image>
+         <view class='ceng'>
+           <view class="tit">证书检测</view>
+           <view class='line'></view>
+           <view class="des">Removing fog and snow</view>
+         </view>
+          </navigator>
+
+          <navigator class='box' url="/pages/second/second?data1={{data2}}">
+         <image class='pic' src='/images/psmajor03.jpg3.jpg'></image>
+         <view class='ceng'>
+           <view class="tit">一键降噪</view>
+           <view class='line'></view>
+           <view class="des">One click noise reduction</view>
+         </view>
+          </navigator>
+
+          <navigator class='box' url="/pages/second/second?data1={{data3}}">
+         <image class='pic' src='/images/psmajor04.jpg4.jpg'></image>
+         <view class='ceng'>
+           <view class="tit">腐蚀膨胀</view>
+           <view class='line'></view>
+           <view class="des">Corrosion expansion</view>
+         </view>
+          </navigator>
+
+          <navigator class='box' url="/pages/second/second?data1={{data4}}">
+         <image class='pic' src='/images/psmajor05.jpg5.jpg'></image>
+         <view class='ceng'>
+           <view class="tit">去雾除雪</view>
+           <view class='line'></view>
+           <view class="des">Certificate checking</view>
+         </view>
+          </navigator>
+
+          <navigator class='box' >
+         <image class='pic' src='/images/psmajor06.jpg6.jpg'></image>
+         <view class='ceng'>
+           <view class="tit">分享社区</view>
+           <view class='line'></view>
+           <view class="des">Sharing community</view>
+         </view>
+          </navigator>
+
+          <navigator class='box' >
+         <image class='pic' src='/images/psmajor02.jpg2.jpg'></image>
+         <view class='ceng'>
+           <view class="tit">功能期待</view>
+           <view class='line'></view>
+           <view class="des">Function expectation</view>
+         </view>
+          </navigator>
+
+      </view>
+    </view>
+  </view>
+
+<view class="footer">
+  <image class='pic' mode="widthFix" src='/images/logo.png'></image>
+  <view class='text'>- ·高端· ·高效· ·娱乐· ·至上· -</view>
+
+</view>

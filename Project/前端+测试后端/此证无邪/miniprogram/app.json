@@ -1,0 +1,34 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/second/second",
+    "pages/third/third",
+    "pages/load/load"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarTextStyle":"white",
+    "navigationBarTitleText": "此证无邪"
+
+  },
+  "tabBar":{
+    "color":"#B6B6B6",
+    "selectedColor":"#FE9132",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "text":"首页",
+        "iconPath":"images/home.png",
+        "selectedIconPath":"images/home-h.png"
+      },{
+        "pagePath":"pages/load/load",
+        "text":"登陆",
+        "iconPath":"images/list.png",
+        "selectedIconPath":"images/list-h.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

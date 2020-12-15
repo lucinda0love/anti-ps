@@ -1,0 +1,51 @@
+.nav{
+  background-color: #fff;
+  height:250rpx;
+  border:1px #ccc solid;
+}
+.top{
+/* width: 150rpx;
+height: 150rpx;*/
+margin:40rpx 0 0 300rpx; 
+overflow:hidden;  
+display: block;  
+width: 160rpx;  
+height: 160rpx;  
+border-radius: 50%;  
+border: 2px solid #fff;  
+box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);  
+}
+
+.name{
+  margin:30rpx  20rpx 0 60rpx;
+}
+.item{
+height: 90rpx;
+width: 100%;
+background-color:white;
+display: flex;
+border-radius: 20rpx; 
+border:1px #ccc solid;
+
+}
+.left{
+margin: 28rpx 0 0 0;
+display: flex;
+flex-grow: 1;
+}
+.right{
+display: flex;
+justify-content: flex-end;
+flex-grow: 1;
+color: #ccc;
+margin: 28rpx;
+margin-right: 30rpx;
+}
+.pic{
+  margin:28rpx 30rpx 0 30rpx;  
+  height: 50%;
+  width: 40rpx; 
+  }
+.iu{
+  margin:10rpx 0 10rpx 0;
+}

@@ -1,0 +1,18 @@
+<view class="back">
+  <image src='/images/back.jpeg' style="opcity:{{0.5}}" class='backimage'></image>
+</view>
+<view class='box'>
+  <view wx:for="{{imagesList}}" wx:for-item="image" wx:key="index" class="previewimg"> 
+        <image mode='widthFix' class='image' src="{{image}}" data-src="{{image}}" bindtap="previewImage"></image> 
+   </view> 
+</view>
+<view class='select'>
+  <button class="btn"  bindtap='browse' >选择图片</button>
+</view>
+<view class='selsect'>
+    <button class="btn" bindtap='browse'>选择图片</button>
+    <button class='btn' bindtap='save'>保存图片</button>
+</view>
+
+
+

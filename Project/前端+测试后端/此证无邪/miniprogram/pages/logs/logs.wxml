@@ -1,0 +1,20 @@
+<view class='page'>
+  <view class="b1">
+    <view class='b2' style='width:600rpx;height:400rpx; margin:60;display:flex; flex-direction:column'>
+      <view style='font-size:40rpx;line-height:80rpx; text-align:center'>第{{keep}}天</view>
+      <view style='font-size:140rpx;line-height:100rpx; text-align:center'>{{date}}</view>
+      <view style='font-size:40rpx;line-height:80rpx; text-align:center'>{{time}}</view>
+      <view style='font-size:40rpx;line-height:60rpx; text-align:center'>{{motto[day]}}</view>
+    </view>
+  </view> 
+
+  <view class='b2 b5' style='width:350rpx;height:350rpx;flex-direction:column;margin-left:75rpx' catchtap='to_set_logs'>
+      <view style='font-size:60rpx;line-height:200rpx; text-align:center'>练 习</view>
+      <view style='font-size:60rpx;line-height:50rpx; text-align:center'>模 式</view>
+  </view>
+
+  <view class='b2 b5 b6' style='width：200rpx;height:190rpx;flex-direction:column' catchtap='to_test'>
+      <view style='font-size:60rpx;line-height:100rpx; text-align:center'>试 卷</view>
+      <view style='font-size:60rpx;line-height:70rpx; text-align:center'>模 拟</view>
+  </view>
+</view>
