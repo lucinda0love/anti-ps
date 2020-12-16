@@ -1,0 +1,12 @@
+<view class='box'>
+  <view wx:for="{{imagesList}}" wx:for-item="image" wx:key="index" class="previewimg"> 
+        <image mode='widthFix' class='image' src="{{image}}" data-src="{{image}}" bindtap="previewImage"></image> 
+   </view> 
+</view>
+<view class='selsect'>
+    <button style="width: 100px;height: 40px;background: #438BEF;color: #fff;" bindtap='browse'>选择</button>
+    <button style="width: 100px;height: 40px;background: #438BEF;color: #fff;" bindtap='detimg'>检测</button>
+    <button style="width: 100px;height: 40px;background: #438BEF;color: #fff;" bindtap='save'>保存</button>
+</view>
+
+

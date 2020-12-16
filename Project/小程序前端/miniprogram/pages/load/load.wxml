@@ -1,0 +1,34 @@
+
+<view class='content'>
+  <view class='nav'>
+    <view class='top'>
+      <open-data type="userAvatarUrl" class='picc'></open-data>
+    </view>
+  </view>
+    <view class='item iu'>
+    <image src='/images/look.png' class='pic'></image>
+    <text class='left'>昵称:</text><open-data type="userNickName" class='name'></open-data>
+      
+    </view>
+    <view class='item iu'>
+      <image src='/images/user.png' class='pic'></image>
+      <text class='left'>实名</text><text class='right' wx:if="{{myinfo.email==''|| myinfo.email==null}}">未实名</text><text class='right' wx:else>已实名</text>
+    </view>
+
+    <view class='item iu' bindtap='setemail'>
+    <image src='/images/email.jpg' class='pic'></image>
+     <text class='left'> 邮箱</text><text class='right' wx:if="{{myinfo.email==''|| myinfo.email==null}}">未绑定</text><text class='right' wx:else>{{myinfo.email}}</text>
+    </view>
+    <view class='item iu'>
+      <image src='/images/prePic1.png' class='pic'></image>
+      <text class='left'>历史</text><text class='right'>></text>
+    </view>
+    <view class='item iu' bindtap='exit'>
+      <image src='/images/exit.jpg' class='pic'></image>
+      <text class='left'>退出</text><text class='right'>></text>
+    </view>
+    <view class='item iu'>
+      <image src='/images/xiaoxi.png' class='pic'></image>
+      <text class='left'>关于</text><text class='right'>></text>
+    </view>
+</view>

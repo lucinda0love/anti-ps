@@ -1,0 +1,27 @@
+page{
+  background-color:#F5F5F5;
+}
+view{
+  float: center;
+}
+.b1{
+  margin: 75rpx 75rpx 30rpx 75rpx;
+}
+.b2{
+  background-color: white;
+  border-bottom: 1px solid #F5F5F5;
+  border-radius: 7%;
+}
+.b4{
+  width: 600rpx;
+  height: 100rpx;
+  margin-top: 100rpx;
+  line-height:50rpx
+}
+.b5{
+  border-radius: 100%;
+  margin-top: 10rpx;
+}
+.b6{
+  margin: 10rpx 100rpx 10rpx 300rpx;
+}

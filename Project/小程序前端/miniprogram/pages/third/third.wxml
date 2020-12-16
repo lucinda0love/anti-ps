@@ -1,0 +1,5 @@
+<view class='container'>
+  <input placeholder='请输入你的ECS实例ID' class='search-input' value='{{ inputValue }}' bindblur='bindblur'></input>
+  <view class='resultView' hidden='{{ showView }}'>
+  </view>
+</view>

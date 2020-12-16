@@ -16,7 +16,6 @@ NCLASSES = 2
 HEIGHT = 1024
 WIDTH = 1024
 
-
 #-------------解码层---------------
 #参数含义：取编码后的第几层，是图像，分类数
 def segnet_decoder(f, n_classes, n_up=4):
